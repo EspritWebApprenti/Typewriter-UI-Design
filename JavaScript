@@ -1,0 +1,16 @@
+const text2 = document.querySelector('.text2');
+
+const changement = () => {
+    setTimeout(() => {
+        text2.textContent = "Etudiant";
+    }, 0);
+    setTimeout(() => {
+        text2.textContent = "YouTubeur";
+    }, 3000);
+    setTimeout(() => {
+        text2.textContent = "Débutant";
+    }, 6000)
+}
+
+changement();
+setInterval(changement, 9000)
